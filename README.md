@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Final Project 401-D45
+## Sock-Nut Team
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Joey Hernandez**
+- **Matt Miguel**
+- **Michael Hendricks**
+- **Ryan Lee**
+- **Dario Vitorte**
 
-## Available Scripts
+## Cooperation Plan
 
-In the project directory, you can run:
+### **Team Key Strengths**
 
-### `npm start`
+- **Joey** and **Michael** Program Management, React, JavaScript, teamwork, bootstrap-react.
+- **Joey** Front-end Design, creative, communication, leadership, team building, all-around BA.
+- **Ryan** Cool bird Dad, testing/bug hunting, Master of parrot gifs.
+- **Michael** Backend creation, Javascript development and problem solving.
+- **Dario** Apex, technical acumen, bug hunting, problem solving, Back-end developer extraordinaire.
+- **Matt** He is pretty cool, great collaborator, team player, good in all aspects of full-stack, prefers the Back-end.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### How are we going to utilize these strengths?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- We're going to learn how best utilize our strengths and weaknesses by forthright questions and answers before starting on aspects of our project.
 
-### `npm test`
+### What professional competencies do you want work on?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Joey** wants to work on leadership and project/time-management as well as confidence in technical skills.
+- **Ryan** endeavors to hone his technical skills.
+- **Michael** creativity and dealing with ambiguity.
+- **Matt** build confidence in technical skills and personally, also endeavors to hone his skills.
+- **Dario** communication skills, organization and time-management.
 
-### `npm run build`
+### Day to day work schedule
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **9:00am to 6:00pm** 12pm-2pm lunch designed but open to interpretation.
+- Morning standup to go over what is planned.
+- Afternoon (~5:00PM) will be bringing all the code together and planning for the next day.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Conflict Plan
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### **Conflict Resolution**
 
-### `npm run eject`
+1. One-on-one discussion.
+2. Mediation with another group member.
+3. Group discussion.
+4. Elevate to the next level as necessary.
+5. Each member will take ten paces, draw their chosen weapon, and fight to the death.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Communication Plan
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Availability
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Joey** 12AM cutoff (but is an insomniac - available for friends at all times or emergencies)
+- **Michael** 9AM-6PM
+- **Ryan** 12AM but also available whenever
+- **Matt** soft cut-off at 6PM with an exigent hard cut-off of 11PM
+- **Dario** 9AM-6PM, available when necessary unless otherwise stated
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Communication Platforms?
 
-## Learn More
+- **Slack**
+- **Remo**
+- **Text** *(for emergencies)*
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Breaks and off hours
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- As needed but will have planned lunch
+- If we start to fall behind?
+- Reevaluate what is MVP for us
 
-### Code Splitting
+### Communication on off hours
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Slack**
+- **text** (for urgent needs)
+- Making sure to hear all voices
+- Everyone will be sharing at stand up and stand down.
+- Frame responses with **mutual respect**.
 
-### Analyzing the Bundle Size
+### DEI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Joey** is going to do his best to check his internal biases and assumptions of others.
+- **Michael** wants to ensure all voices are heard.
+- **Ryan** wants to work on examining his assumptions.
+- **Matt** I like what my team likes, SAME!
+- **Dario** same as above, for sure!
 
-### Making a Progressive Web App
+### Work Plan
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Tools for collaboration and workflow
 
-### Advanced Configuration
+- We will be creating a task list to manage things from our **Trello** board.
+- **LiveShare** on VS code to pair program
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Project Management Tool Link:**
+https://trello.com/b/IDvWswAs/401-mid-term
 
-### Deployment
+**Presentation Deck:**
+https://docs.google.com/presentation/d/14Ddek1QGvUZX6_DxkPjK0osDrVkgatg1pWTKrCBmVcI/edit?usp=sharing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Git Process
 
-### `npm run build` fails to minify
+- Project will live on the GitHub
+- Making an organization
+- Working on own branches
+- Push to staging and test
+- Otherwise push as needed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### PR Processes
+
+- Two other reviews for main
+- One for stage
+- Merging hopefully once a day but as necessary
+- Pull in mornings
