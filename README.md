@@ -9,7 +9,7 @@
 
 ## Cooperation Plan
 
-**Team Key Strengths**
+### **Team Key Strengths**
 
 - **Joey** and **Michael** Program Management, React, JavaScript, teamwork, bootstrap-react.
 - **Joey** Front-end Design, creative, communication, leadership, team building, all-around BA.
