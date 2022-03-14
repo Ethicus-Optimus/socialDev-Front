@@ -1,31 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Main from './components/Main'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          ScrollyNotes
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Log In
-        </a>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sign Up
-        </a>
-      </header>
-    </div>
+    <Main />
   );
 }
 
