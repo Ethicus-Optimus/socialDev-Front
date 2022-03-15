@@ -22,10 +22,13 @@ function Main() {
   // console.log(email);
   return (
     <div className="App">
-      {/* These 2 will be in a boolean that basically says - If signed in, show Homescreen, if not signed in, show LandingPage */}
-      {isAuthenticated ? <Homescreen /> : <LandingPage />}
-      {/* <LandingPage />
-      <Homescreen /> */}
+      {isAuthenticated ?
+      <div>
+        {user.email}
+        <Homescreen />
+      </div> 
+       : 
+      <LandingPage />}
     </div>
   )
 }
