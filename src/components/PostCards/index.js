@@ -1,14 +1,18 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+// import Card from 'react-bootstrap/Card';
+// import Button from 'react-bootstrap/Button';
 import SingleCard from './SingleCard'
 
 
 function PostCards(props) {
+  let posts = props.user_posts
   return (
     <div>
-      <SingleCard this_post={props.user_posts[0]}/>
-      <SingleCard this_post={props.user_posts[1]}/>
+      <ul>
+        {posts.map((post) => {
+          return <li><SingleCard this_post={post}/></li>
+        })}
+      </ul>
     </div>
   )
 }

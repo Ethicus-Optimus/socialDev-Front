@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 function SingleCard(props) {
   return (
     <div>
-      {console.log(props)}
+      {/* {console.log(props)} */}
       <Card style={{ width: '18rem' }}>
         {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
