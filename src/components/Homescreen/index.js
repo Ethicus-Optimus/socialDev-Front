@@ -1,19 +1,20 @@
 import React from 'react';
 import Footer from '../Footer'
 import Header from '../Header'
-import PostCard from '../PostCard'
+import PostCards from '../PostCards'
 import NewNoteForm from '../NewNoteForm';
 import LogoutButton from '../LogoutButton';
 
-function Homescreen() {
+function Homescreen(props) {
   return (
     <div className="App">
+      {/* {console.log(props)} */}
       <Header />
+      <h3>{props.email}</h3>
       <LogoutButton />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <NewNoteForm />
+      {/* <h4>{props.user_posts}</h4> */}
+      <PostCards user_posts={props.user_posts}/>
+      <NewNoteForm user_posts={props.user_posts} />
       <Footer />
     </div>
   )

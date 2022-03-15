@@ -14,6 +14,7 @@ function Main() {
     return <div>Loading...</div>;
   }
 
+  let user_posts = ["Here is the main body of the note. It can be whatever you like and should be easy to see as you are scrolling down the page", "Here is the main body of the note. It can be whatever you like and should be easy to see as you are scrolling down the page"];
   // console.log(user);
   // console.log(user.name);
   // console.log(user.email);
@@ -24,8 +25,8 @@ function Main() {
     <div className="App">
       {isAuthenticated ?
       <div>
-        {user.email}
-        <Homescreen />
+        {/* {user.email} */}
+        <Homescreen email={user.email} user_posts={user_posts}/>
       </div> 
        : 
       <LandingPage />}
