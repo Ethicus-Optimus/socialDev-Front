@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../Footer'
 import Header from '../Header'
+import Login from '../Login'
 
 function LandingPage() {
   return (
@@ -8,7 +9,8 @@ function LandingPage() {
       <Header />
       <h2>Welcome to our app ScrollyNotes</h2>
       <h3>Keep track of your Notes by date, and look through them whenever you like!</h3>
-      <h4>New here?</h4>
+      <Login />
+      {/* <h4>New here?</h4>
       <a
         className="App-link"
         href="https://reactjs.org"
@@ -25,7 +27,7 @@ function LandingPage() {
           rel="noopener noreferrer"
         >
           Log In
-        </a>
+        </a> */}
       <Footer />
     </div>
   )
