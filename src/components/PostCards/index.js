@@ -4,9 +4,13 @@ import SingleCard from './SingleCard'
 
 
 
-function PostCards(props) {
-  useEffect(props.getUserPosts,[])
-  let posts = props.user_posts
+function PostCards({getUserPosts, user_posts}) {
+  // useEffect(props.getUserPosts,[]);
+  useEffect(() => {
+    getUserPosts()  
+   // eslint-disable-next-line react-hooks/exhaustive-deps
+   },[]);
+  let posts = user_posts
   // let posts = props.getUserPosts
   // console.log(posts)
   return (
