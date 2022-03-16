@@ -14,7 +14,7 @@ function Homescreen(props) {
       <LogoutButton />
       {/* <h4>{props.user_posts}</h4> */}
       <PostCards user_posts={props.user_posts}/>
-      <NewNoteForm user_posts={props.user_posts} />
+      <NewNoteForm user_posts={props.user_posts} addPost={props.addPost} />
       <Footer />
     </div>
   )

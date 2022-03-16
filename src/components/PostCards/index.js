@@ -8,9 +8,10 @@ function PostCards(props) {
   let posts = props.user_posts
   return (
     <div>
+      {console.log(posts)}
       <ul>
-        {posts.map((post) => {
-          return <li><SingleCard this_post={post}/></li>
+        {posts.map((post, index) => {
+          return <li key={index}><SingleCard this_post={post}/></li>
         })}
       </ul>
     </div>
