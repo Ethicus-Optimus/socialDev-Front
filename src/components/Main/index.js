@@ -32,7 +32,8 @@ function Main() {
   
   const addPost = async (e) => {
     e.preventDefault();
-    let content = e.target.newPost.value;
+    let content = e.target.newPostContent.value;
+    let title = e.target.newPostTitle.value;
     let email = user.email;
     let updated = new Date();
     let url = `${process.env.REACT_APP_BACKEND_URL}/posts`;
@@ -40,12 +41,16 @@ function Main() {
     let requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json'},
-      body: JSON.stringify({updated: updated, email: email, content: content})
+      body: JSON.stringify({updated: updated, email: email, content: content, title: title})
     }
     fetch(url, requestOptions)
       .then(response => console.log(response,content))
       // This works as a last resort, but want to find a way to reload state
       // .then(window.location.reload(false));
+  }
+
+  const deletePost = async (e) => {
+
   }
 
   if (isLoading){
@@ -56,7 +61,7 @@ function Main() {
     <div className="App">
       {isAuthenticated ?
       <div>
-        <Homescreen email={user.email} user_posts={user_posts} addPost={addPost} getUserPosts={getUserPosts}/>
+        <Homescreen email={user.email} user_posts={user_posts} addPost={addPost} getUserPosts={getUserPosts} deletePost={deletePost} />
       </div> 
        : 
       <LandingPage />}

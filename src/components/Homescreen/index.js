@@ -13,8 +13,8 @@ function Homescreen(props) {
       <h3>{props.email}</h3>
       <LogoutButton />
       {/* <h4>{props.user_posts}</h4> */}
-      <PostCards user_posts={props.user_posts} getUserPosts={props.getUserPosts}/>
-      <NewNoteForm user_posts={props.user_posts} addPost={props.addPost} getUserPosts={props.getUserPosts}/>
+      <PostCards user_posts={props.user_posts} getUserPosts={props.getUserPosts} deletePost={props.deletePost}/>
+      <NewNoteForm user_posts={props.user_posts} addPost={props.addPost} />
       <Footer />
     </div>
   )

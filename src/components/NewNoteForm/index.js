@@ -7,7 +7,10 @@ function NewNoteForm(props) {
     <div>
       <Form name="newPost" onSubmit={props.addPost} >
         <Form.Group className="mb-3" >
-          <Form.Control as="textarea" rows={3} placeholder="New Note" id="newPost" name="newPost" />
+          <Form.Control placeholder="Note Title" id="newPostTitle" name="newPostTitle" />
+      </Form.Group>
+        <Form.Group className="mb-3" >
+          <Form.Control as="textarea" rows={3} placeholder="New Note" id="newPostContent" name="newPostContent" />
         </Form.Group>
         <Button variant="primary" type="submit" >
         Add
