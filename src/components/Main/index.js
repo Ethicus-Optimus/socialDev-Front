@@ -22,10 +22,11 @@ function Main() {
       let post = object.content;
       let title = object.title;
       let updated = object.updated;
-      postArray.push([post,title,updated]);
+      let postId = object._id;
+      postArray.push([post,title,updated,postId]);
     }
     setUserPosts(user_posts.concat(postArray))
-    // console.log(postArray)
+    // console.log(postObjectsArray[0])
     // console.log(email)
 
   }
@@ -49,8 +50,37 @@ function Main() {
       // .then(window.location.reload(false));
   }
 
-  const deletePost = async (e) => {
 
+
+  const editPost = async (e, postId) => {
+    console.log(e)
+    e.preventDefault();
+    let content = e.target.editPostContent.value
+    // console.log(content)
+    let title = e.target.editPostTitle.value
+    let email = user.email;
+    let updated = new Date();
+    let url = `${process.env.REACT_APP_BACKEND_URL}/posts/${e}`;
+    // console.log(url)
+    let requestOptions = {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json'},
+      body: JSON.stringify({updated: updated, email: email, content: content, title: title})
+    }
+    fetch(url, requestOptions)
+      .then(response => console.log(response))
+  }
+
+  const deletePost = async (e, postId) => {
+    console.log(e)
+    let url = `${process.env.REACT_APP_BACKEND_URL}/posts/${e}`;
+    console.log(url)
+    let requestOptions = {
+      method: 'DELETE',
+      body: url
+    }
+    fetch(url, requestOptions)
+      .then(response => console.log(response))
   }
 
   if (isLoading){
@@ -61,7 +91,7 @@ function Main() {
     <div className="App">
       {isAuthenticated ?
       <div>
-        <Homescreen email={user.email} user_posts={user_posts} addPost={addPost} getUserPosts={getUserPosts} deletePost={deletePost} />
+        <Homescreen email={user.email} user_posts={user_posts} addPost={addPost} getUserPosts={getUserPosts} deletePost={deletePost} editPost={editPost}/>
       </div> 
        : 
       <LandingPage />}

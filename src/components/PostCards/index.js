@@ -4,7 +4,7 @@ import SingleCard from './SingleCard'
 
 
 
-function PostCards({getUserPosts, user_posts}) {
+function PostCards({getUserPosts, user_posts, deletePost, editPost}) {
   useEffect(() => {
     getUserPosts()  
    // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -17,7 +17,7 @@ function PostCards({getUserPosts, user_posts}) {
       {console.log(posts)}
       <ul>
         {posts.map((post, index) => {
-          return <li key={index}><SingleCard this_post={post}/></li>
+          return <li key={index}><SingleCard this_post={post} deletePost={deletePost} editPost={editPost} /></li>
         })}
       </ul>
     </div>
