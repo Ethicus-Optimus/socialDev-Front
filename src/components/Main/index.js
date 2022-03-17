@@ -8,13 +8,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 
 function Main() {
   const { user, isAuthenticated, isLoading } = useAuth0();
-
-  
   const [user_posts, setUserPosts] = useState([]);
-
-  // const handleClick = () => {
-  //   console.log(user_posts)
-  // }
   
   const getUserPosts = async () => {
     let email = user.email;
@@ -26,7 +20,9 @@ function Main() {
     for (let i = 0; i < postObjectsArray.length; i++){
       let object = postObjectsArray[i];
       let post = object.content;
-      postArray.push(post);
+      let title = object.title;
+      let updated = object.updated;
+      postArray.push([post,title,updated]);
     }
     setUserPosts(user_posts.concat(postArray))
     // console.log(postArray)
@@ -34,7 +30,6 @@ function Main() {
 
   }
   
-
   const addPost = async (e) => {
     e.preventDefault();
     let content = e.target.newPost.value;
@@ -50,12 +45,8 @@ function Main() {
     fetch(url, requestOptions)
       .then(response => console.log(response,content))
       // This works as a last resort, but want to find a way to reload state
-
       // .then(window.location.reload(false));
   }
-  
-  
-  
 
   if (isLoading){
     return <div>Loading...</div>;
