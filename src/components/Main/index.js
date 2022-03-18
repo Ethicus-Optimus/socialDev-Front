@@ -38,7 +38,7 @@ function Main() {
   }
   
   const addPost = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     let content = e.target.newPostContent.value;
     let title = e.target.newPostTitle.value;
     let email = user.email;
@@ -87,11 +87,11 @@ function Main() {
     }
     fetch(url, requestOptions)
       .then(response => console.log(response))
-      // .then(window.location.reload(true));
+      .then(window.location.reload(true));
   }
 
   if (isLoading){
-    return <div>Loading...</div>;
+    return <div>Thank you for watching our presentation</div>;
   }
 
   return (
