@@ -4,12 +4,17 @@ import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 import Modal from 'react-bootstrap/Modal'
 
-function EditModal({show, openModal, closeModal, editPost}) {
+function EditModal({show, openModal, closeModal, editPost }) {
   
+  // console.log(show[1])
+  // let postId = show[1]
+  // console.log(postId)
+  // console.log(show)
   const handleEditClick = (e) => {
     // console.log('this should be a modal')
     // openModal();
     // editPost(postId)
+
   }
 
   return (

@@ -9,6 +9,11 @@ import { useAuth0 } from '@auth0/auth0-react'
 function Main() {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [user_posts, setUserPosts] = useState([]);
+
+  // const openModal = () => setShow([true]);
+  // const [show, setShow] = useState([false]);
+  // const closeModal = () => setShow([false]);
+  // const addId = (id) => setShow(show.push(id))
   
   const getUserPosts = async () => {
     let email = user.email;
@@ -26,13 +31,14 @@ function Main() {
       postArray.push([post,title,updated,postId]);
     }
     setUserPosts(user_posts.concat(postArray))
+    
     // console.log(postObjectsArray[0])
     // console.log(email)
 
   }
   
   const addPost = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     let content = e.target.newPostContent.value;
     let title = e.target.newPostTitle.value;
     let email = user.email;
@@ -47,9 +53,8 @@ function Main() {
     fetch(url, requestOptions)
       .then(response => console.log(response,content))
       // This works as a last resort, but want to find a way to reload state
-      // .then(window.location.reload(false));
+      // .then(window.location.reload(true));
   }
-
 
 
   // const editPost = async (e, postId) => {
@@ -71,6 +76,7 @@ function Main() {
   //     .then(response => console.log(response))
   // }
 
+
   const deletePost = async (e, postId) => {
     console.log(e)
     let url = `${process.env.REACT_APP_BACKEND_URL}/posts/${e}`;
@@ -81,10 +87,11 @@ function Main() {
     }
     fetch(url, requestOptions)
       .then(response => console.log(response))
+      .then(window.location.reload(true));
   }
 
   if (isLoading){
-    return <div>Loading...</div>;
+    return <div>Thank you for watching our presentation</div>;
   }
 
   return (
@@ -92,6 +99,7 @@ function Main() {
       {isAuthenticated ?
       <div>
         <Homescreen email={user.email} user_posts={user_posts} addPost={addPost} getUserPosts={getUserPosts} deletePost={deletePost}/>
+
       </div> 
        : 
       <LandingPage />}
