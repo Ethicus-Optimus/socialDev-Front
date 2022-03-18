@@ -14,15 +14,15 @@ function PostCards({getUserPosts, user_posts, deletePost}) {
 
 
 
-  const [show, setShow] = useState([false]);
-  const [currentId, setCurrentId] = useState("")
+  // const [show, setShow] = useState([false]);
+  // const [currentId, setCurrentId] = useState("")
 
   // const openModal = () => {
   //   console.log('hi from open modal function')
   //   setShow([true]);
   // }
   // const closeModal = () => setShow([false]);
-  const setId = (id) => setCurrentId(id)
+  // const setId = (id) => setCurrentId(id)
 
   // const addId = (id) => setShow(show.push(id))
 
