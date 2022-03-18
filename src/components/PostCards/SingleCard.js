@@ -36,11 +36,12 @@ function SingleCard({this_post, deletePost}) {
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>
+            ------
             {content}
+            
           </Card.Text>
         </Card.Body>
-        <Card.Footer className="text-muted">Last Posted/Updated: {lastModified}</Card.Footer>
-          {/* <Button  onClick={handleEditClick} variant="primary">Edit Note</Button> */}
+        <Card.Footer className="text-muted">Posted date: {lastModified}</Card.Footer>
           <Button onClick={handleClick} variant="primary">Delete Note</Button>
       </Card>
       {/* <EditModal show={show} openModal={openModal} closeModal={closeModal} editPost={editPost}/> */}
