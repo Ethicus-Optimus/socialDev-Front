@@ -9,6 +9,11 @@ import { useAuth0 } from '@auth0/auth0-react'
 function Main() {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [user_posts, setUserPosts] = useState([]);
+
+  // const openModal = () => setShow([true]);
+  // const [show, setShow] = useState([false]);
+  // const closeModal = () => setShow([false]);
+  // const addId = (id) => setShow(show.push(id))
   
   const getUserPosts = async () => {
     let email = user.email;
@@ -26,6 +31,7 @@ function Main() {
       postArray.push([post,title,updated,postId]);
     }
     setUserPosts(user_posts.concat(postArray))
+    
     // console.log(postObjectsArray[0])
     // console.log(email)
 
@@ -47,14 +53,14 @@ function Main() {
     fetch(url, requestOptions)
       .then(response => console.log(response,content))
       // This works as a last resort, but want to find a way to reload state
-      // .then(window.location.reload(false));
+      .then(window.location.reload(false));
   }
 
 
 
   const editPost = async (e, postId) => {
     console.log(e)
-    e.preventDefault();
+    // e.preventDefault();
     let content = e.target.editPostContent.value
     // console.log(content)
     let title = e.target.editPostTitle.value
@@ -91,7 +97,7 @@ function Main() {
     <div className="App">
       {isAuthenticated ?
       <div>
-        <Homescreen email={user.email} user_posts={user_posts} addPost={addPost} getUserPosts={getUserPosts} deletePost={deletePost} editPost={editPost}/>
+        <Homescreen email={user.email} user_posts={user_posts} addPost={addPost} getUserPosts={getUserPosts} deletePost={deletePost} editPost={editPost} />
       </div> 
        : 
       <LandingPage />}

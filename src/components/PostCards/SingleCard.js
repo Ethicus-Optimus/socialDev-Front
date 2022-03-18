@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import EditModal from '../EditModal'
 
-function SingleCard({this_post, deletePost, editPost}) {
+function SingleCard({this_post, deletePost, editPost, addId, handleEditClick, openModal, closeModal, show}) {
   let content = this_post[0];
   let title = this_post[1];
   let lastModified = this_post[2];
@@ -12,22 +12,31 @@ function SingleCard({this_post, deletePost, editPost}) {
   const handleClick = (e) => {
     deletePost(postId)
   }
-  const openModal = () => setShow(true);
 
-  const handleEditClick = (e) => {
-    // console.log('this should be a modal')
+  // const [show, setShow] = useState([false]);
+  // const openModal = () => setShow([true]);
+  // const closeModal = () => setShow([false]);
+
+  
+
+
+  const handleButtonClick = () => {
+    handleEditClick(postId);
     openModal();
-    // editPost(postId)
   }
+  // const handleEditClick = () => {
+  //   addId(postId)
+  //   console.log(postId)
+  //   console.log(show)
 
-  const [show, setShow] = useState(false)
+  //   openModal();
+  //   // editPost(postId)
+  // }
 
-  const closeModal = () => setShow(false);
 
   return (
     <div>
       <Card style={{ width: '18rem' }}>
-        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>
@@ -35,10 +44,10 @@ function SingleCard({this_post, deletePost, editPost}) {
           </Card.Text>
         </Card.Body>
         <Card.Footer className="text-muted">Last Posted/Updated: {lastModified}</Card.Footer>
-          <Button  onClick={handleEditClick} variant="primary">Edit Note</Button>
+          <Button  onClick={handleButtonClick} variant="primary">Edit Note</Button>
           <Button onClick={handleClick} variant="primary">Delete Note</Button>
       </Card>
-      <EditModal show={show} openModal={openModal} closeModal={closeModal} editPost={editPost}/>
+      <EditModal show={show} openModal={openModal} closeModal={closeModal}/>
     </div>
   )
 }
