@@ -11,9 +11,10 @@ function EditModal({show, openModal, closeModal, editPost }) {
   // console.log(postId)
   // console.log(show)
   const handleEditClick = (e) => {
-    // e.preventDefault()
-    // setShow(show.concat(postId))
-    closeModal()
+    // console.log('this should be a modal')
+    // openModal();
+    // editPost(postId)
+
   }
 
   return (
