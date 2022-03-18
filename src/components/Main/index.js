@@ -53,7 +53,7 @@ function Main() {
     fetch(url, requestOptions)
       .then(response => console.log(response,content))
       // This works as a last resort, but want to find a way to reload state
-      .then(window.location.reload(false));
+      // .then(window.location.reload(true));
   }
 
 
@@ -87,6 +87,7 @@ function Main() {
     }
     fetch(url, requestOptions)
       .then(response => console.log(response))
+      // .then(window.location.reload(true));
   }
 
   if (isLoading){
