@@ -10,24 +10,6 @@ function LandingPage() {
       <h2>Welcome to our app Cache-App</h2>
       <h3>Keep track of your Notes by date, and look through them whenever you like!</h3>
       <Login />
-      {/* <h4>New here?</h4>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Sign Up
-      </a>
-      <h4>Returning User</h4>
-      <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Log In
-        </a> */}
       <Footer />
     </div>
   )
