@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
@@ -11,9 +11,10 @@ function EditModal({show, openModal, closeModal, editPost }) {
   // console.log(postId)
   // console.log(show)
   const handleEditClick = (e) => {
-    // e.preventDefault()
-    // setShow(show.concat(postId))
-    closeModal()
+    // console.log('this should be a modal')
+    // openModal();
+    // editPost(postId)
+
   }
 
   return (

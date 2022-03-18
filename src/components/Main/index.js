@@ -38,7 +38,7 @@ function Main() {
   }
   
   const addPost = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     let content = e.target.newPostContent.value;
     let title = e.target.newPostTitle.value;
     let email = user.email;
@@ -57,25 +57,25 @@ function Main() {
   }
 
 
+  // const editPost = async (e, postId) => {
+  //   console.log(e)
+  //   e.preventDefault();
+  //   let content = e.target.editPostContent.value
+  //   // console.log(content)
+  //   let title = e.target.editPostTitle.value
+  //   let email = user.email;
+  //   let updated = new Date();
+  //   let url = `${process.env.REACT_APP_BACKEND_URL}/posts/${e}`;
+  //   // console.log(url)
+  //   let requestOptions = {
+  //     method: 'PUT',
+  //     headers: { 'Content-Type': 'application/json'},
+  //     body: JSON.stringify({updated: updated, email: email, content: content, title: title})
+  //   }
+  //   fetch(url, requestOptions)
+  //     .then(response => console.log(response))
+  // }
 
-  const editPost = async (e, postId) => {
-    console.log(e)
-    // e.preventDefault();
-    let content = e.target.editPostContent.value
-    // console.log(content)
-    let title = e.target.editPostTitle.value
-    let email = user.email;
-    let updated = new Date();
-    let url = `${process.env.REACT_APP_BACKEND_URL}/posts/${e}`;
-    // console.log(url)
-    let requestOptions = {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json'},
-      body: JSON.stringify({updated: updated, email: email, content: content, title: title})
-    }
-    fetch(url, requestOptions)
-      .then(response => console.log(response))
-  }
 
   const deletePost = async (e, postId) => {
     console.log(e)
@@ -87,18 +87,19 @@ function Main() {
     }
     fetch(url, requestOptions)
       .then(response => console.log(response))
-      // .then(window.location.reload(true));
+      .then(window.location.reload(true));
   }
 
   if (isLoading){
-    return <div>Loading...</div>;
+    return <div>Thank you for watching our presentation</div>;
   }
 
   return (
     <div className="App">
       {isAuthenticated ?
       <div>
-        <Homescreen email={user.email} user_posts={user_posts} addPost={addPost} getUserPosts={getUserPosts} deletePost={deletePost} editPost={editPost} />
+        <Homescreen email={user.email} user_posts={user_posts} addPost={addPost} getUserPosts={getUserPosts} deletePost={deletePost}/>
+
       </div> 
        : 
       <LandingPage />}

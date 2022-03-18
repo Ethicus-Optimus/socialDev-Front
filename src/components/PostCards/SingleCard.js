@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import EditModal from '../EditModal'
+// import EditModal from '../EditModal'
 
-function SingleCard({this_post, deletePost, editPost, addId, handleEditClick, openModal, closeModal, show}) {
+function SingleCard({this_post, deletePost}) {
+
   let content = this_post[0];
   let title = this_post[1];
   let lastModified = this_post[2];
@@ -12,26 +13,21 @@ function SingleCard({this_post, deletePost, editPost, addId, handleEditClick, op
   const handleClick = (e) => {
     deletePost(postId)
   }
+  // const openModal = () => setShow(true);
 
-  // const [show, setShow] = useState([false]);
-  // const openModal = () => setShow([true]);
-  // const closeModal = () => setShow([false]);
+  // const handleEditClick = (e) => {
+  //   // console.log('this should be a modal')
+  //   openModal();
+  //   // editPost(postId)
+  // }
 
-  
-
-
-  const handleButtonClick = () => {
-    handleEditClick(postId);
-    openModal();
-  }
-  // const handleEditClick = () => {
-  //   addId(postId)
-  //   console.log(postId)
-  //   console.log(show)
 
   //   openModal();
   //   // editPost(postId)
   // }
+
+
+  // const closeModal = () => setShow(false);
 
 
   return (
@@ -44,10 +40,11 @@ function SingleCard({this_post, deletePost, editPost, addId, handleEditClick, op
           </Card.Text>
         </Card.Body>
         <Card.Footer className="text-muted">Last Posted/Updated: {lastModified}</Card.Footer>
-          <Button  onClick={handleButtonClick} variant="primary">Edit Note</Button>
+          {/* <Button  onClick={handleEditClick} variant="primary">Edit Note</Button> */}
           <Button onClick={handleClick} variant="primary">Delete Note</Button>
       </Card>
-      <EditModal show={show} openModal={openModal} closeModal={closeModal}/>
+      {/* <EditModal show={show} openModal={openModal} closeModal={closeModal} editPost={editPost}/> */}
+
     </div>
   )
 }
