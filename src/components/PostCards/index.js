@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 
 import SingleCard from './SingleCard'
 // import EditModal from '../EditModal'
