@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 import SingleCard from './SingleCard'
-import EditModal from '../EditModal'
+// import EditModal from '../EditModal'
 
 
 
@@ -21,7 +21,7 @@ function PostCards({getUserPosts, user_posts, deletePost, editPost}) {
     console.log('hi from open modal function')
     setShow([true]);
   }
-  const closeModal = () => setShow([false]);
+  // const closeModal = () => setShow([false]);
   const setId = (id) => setCurrentId(id)
 
   // const addId = (id) => setShow(show.push(id))
