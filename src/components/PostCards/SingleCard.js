@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-// import EditModal from '../EditModal'
 
 function SingleCard({this_post, deletePost}) {
 
@@ -13,23 +12,7 @@ function SingleCard({this_post, deletePost}) {
   const handleClick = (e) => {
     deletePost(postId)
   }
-  // const openModal = () => setShow(true);
-
-  // const handleEditClick = (e) => {
-  //   // console.log('this should be a modal')
-  //   openModal();
-  //   // editPost(postId)
-  // }
-
-
-  //   openModal();
-  //   // editPost(postId)
-  // }
-
-
-  // const closeModal = () => setShow(false);
-
-
+  
   return (
     <div>
       <Card style={{ width: '18rem' }}>
@@ -44,7 +27,6 @@ function SingleCard({this_post, deletePost}) {
         <Card.Footer className="text-muted">Posted date: {lastModified}</Card.Footer>
           <Button onClick={handleClick} variant="primary">Delete Note</Button>
       </Card>
-      {/* <EditModal show={show} openModal={openModal} closeModal={closeModal} editPost={editPost}/> */}
 
     </div>
   )
