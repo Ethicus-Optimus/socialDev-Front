@@ -9,7 +9,7 @@ function EditModal({show, openModal, closeModal, editPost}) {
   const handleEditClick = (e) => {
     // console.log('this should be a modal')
     // openModal();
-    editPost(postId)
+    // editPost(postId)
   }
 
   return (
