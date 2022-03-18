@@ -1,11 +1,12 @@
 import React from 'react';
-import './stylesheets/Header.css';
+import '../stylesheets/Header.css'
+
 
 function Header() {
   return (
     <header className="App-header">
         <h1>
-          ScrollyNotes!
+          Cache-App!
         </h1>
       </header>
   )

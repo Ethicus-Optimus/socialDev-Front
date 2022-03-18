@@ -1,9 +1,17 @@
 
-Card.body { 
-  position: relative;
+.card { 
+  /* position: relative; */
   display: flex;
 	align-items: center;
 	justify-content: center;
   padding: 25px;
-	margin: 30px;
+	margin: auto;
+}
+
+/* .card-body {
+  margin-left: 1500px;
+} */
+
+li {
+  list-style: none;
 }

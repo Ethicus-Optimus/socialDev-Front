@@ -7,7 +7,7 @@ function LandingPage() {
   return (
     <div className="App">
       <Header />
-      <h2>Welcome to our app ScrollyNotes</h2>
+      <h2>Welcome to our app Cache-App</h2>
       <h3>Keep track of your Notes by date, and look through them whenever you like!</h3>
       <Login />
       {/* <h4>New here?</h4>
