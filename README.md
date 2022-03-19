@@ -1,113 +1,109 @@
-# Final Project 401-D45
-## Sock-Nut Team
+# How To Use **Cache-App**
 
-- **Joey Hernandez**
-- **Matt Miguel**
-- **Michael Hendricks**
-- **Ryan Lee**
-- **Dario Vitorte**
+![Cache-App](./public/assets/Image%20from%20iOS.jpg)
 
-## Cooperation Plan
+## Step One
 
-### **Team Key Strengths**
+- begin by running:
+- `git clone` then copy and paste `git@github.com:Ethicus-Optimus/socialdev-front.git`
 
-- **Joey** and **Michael** Program Management, React, JavaScript, teamwork, bootstrap-react.
-- **Joey** Front-end Design, creative, communication, leadership, team building, all-around BA.
-- **Ryan** Cool bird Dad, testing/bug hunting, Master of parrot gifs.
-- **Michael** Backend creation, Javascript development and problem solving.
-- **Dario** Apex, technical acumen, bug hunting, problem solving, Back-end developer extraordinaire.
-- **Matt** He is pretty cool, great collaborator, team player, good in all aspects of full-stack, prefers the Back-end.
+- Do the same for the backend repo:
+- `git clone` then copy and paste `git@github.com:Ethicus-Optimus/socialDev-Back.git`
 
-### How are we going to utilize these strengths?
+## Step Two
 
-- We're going to learn how best utilize our strengths and weaknesses by forthright questions and answers before starting on aspects of our project.
+- run: `cd socialdev-front`
+- then (installs node modules): `npm install`
+- then (installs dependencies): `npm i express bootstrap nodemon cors dotenv mongoose jwt bcrypt base-64 supertest sqlite3 jsonwebtoken`
+- repeat **step two** for 'backend'
 
-### What professional competencies do you want work on?
+## Step Three
 
-- **Joey** wants to work on leadership and project/time-management as well as confidence in technical skills.
-- **Ryan** endeavors to hone his technical skills.
-- **Michael** creativity and dealing with ambiguity.
-- **Matt** build confidence in technical skills and personally, also endeavors to hone his skills.
-- **Dario** communication skills, organization and time-management.
+- Your are going to need to create a `.env` in order to use the server, follow the guide in the provided `.sample.env` file.
 
-### Day to day work schedule
+## How to Use
 
-- **9:00am to 6:00pm** 12pm-2pm lunch designed but open to interpretation.
-- Morning standup to go over what is planned.
-- Afternoon (~5:00PM) will be bringing all the code together and planning for the next day.
+## To start server
 
-### Conflict Plan
+- run: `npm start`
+*To test the server*
 
-#### **Conflict Resolution**
+- run: `npm run test`
+*To run the tests*
 
-1. One-on-one discussion.
-2. Mediation with another group member.
-3. Group discussion.
-4. Elevate to the next level as necessary.
-5. Each member will take ten paces, draw their chosen weapon, and fight to the death.
+## Models
 
-### Communication Plan
+### Cache-App
 
-#### Availability
+- An application for the tracking of relevant development notes organized with a social media feel.
 
-- **Joey** 12AM cutoff (but is an insomniac - available for friends at all times or emergencies)
-- **Michael** 9AM-6PM
-- **Ryan** 12AM but also available whenever
-- **Matt** soft cut-off at 6PM with an exigent hard cut-off of 11PM
-- **Dario** 9AM-6PM, available when necessary unless otherwise stated
+### Problem Domain/Pain Point
 
-### Communication Platforms?
+- Note compiling for relevant usage
+- Making development note taking more fun and engaging
+- Add a collaborative feel to taking notes
 
-- **Slack**
-- **Remo**
-- **Text** *(for emergencies)*
+### MVP
 
-### Breaks and off hours
+- Take notes and categorize.
+- Be able to share, post, delete, and add notes.
 
-- As needed but will have planned lunch
-- If we start to fall behind?
-- Reevaluate what is MVP for us
+### User Authorization
 
-### Communication on off hours
+- For profile owners:
+  - Manage profile details
+  - Manage notes feed
 
-- **Slack**
-- **text** (for urgent needs)
-- Making sure to hear all voices
-- Everyone will be sharing at stand up and stand down.
-- Frame responses with **mutual respect**.
+### User Stories - "As a note creator..."
 
-### DEI
+- I want to be able to add notes I find relevant or useful.
+- I want to be able to delete notes.
+- I want to be able to view my friend's notes.
+- I want to be able to edit my profile details.
 
-- **Joey** is going to do his best to check his internal biases and assumptions of others.
-- **Michael** wants to ensure all voices are heard.
-- **Ryan** wants to work on examining his assumptions.
-- **Matt** I like what my team likes, SAME!
-- **Dario** same as above, for sure!
+### Stress Goals
 
-### Work Plan
+- Likes/UpVotes
+- Edit posted notes
+- Add photos/videos feature
+- Hints and suggested content/users
+- Study groups
 
-#### Tools for collaboration and workflow
+### UMLs and Wireframes
 
-- We will be creating a task list to manage things from our **Trello** board.
-- **LiveShare** on VS code to pair program
+![Landing Page](./public/assets/landingPage.png)
+![UI](./public/assets/userPage.png)
+![Data Flow](./public/assets/cashApp-Data.png)
 
-**Project Management Tool Link:**
-https://trello.com/b/IDvWswAs/401-mid-term
+### Features
 
-**Presentation Deck:**
-https://docs.google.com/presentation/d/14Ddek1QGvUZX6_DxkPjK0osDrVkgatg1pWTKrCBmVcI/edit?usp=sharing
+- Create Notes
+- Read Notes
+- Add Notes
+- Update Notes
+- Delete Notes
 
-### Git Process
+### Deployed Server
 
-- Project will live on the GitHub
-- Making an organization
-- Working on own branches
-- Push to staging and test
-- Otherwise push as needed
+- Front end: [Cache-App](https://brave-jepsen-8e8769.netlify.app/)
+- Server side: [Cache-App](https://ethicus-optumus.herokuapp.com/posts)
 
-#### PR Processes
+### Change Log
 
-- Two other reviews for main
-- One for stage
-- Merging hopefully once a day but as necessary
-- Pull in mornings
+- Version 1.0 completed 18 March 2022
+  - Basic application functionality achieved.
+
+### Error Handling
+
+- Sends a 404 error if the route or method is unavailable.
+- Sends a 500 error for internal server issues.
+
+### Testing
+
+[TESTS](./public/assets/tests.png)
+
+### Credit and Co-Conspirators
+
+![Stack-Zero](./public/assets/Screen%20Shot%202022-03-18%20at%2010.33.13%20AM.png)
+
+- This amazing final project was thoughtfully created and masterfully crafted by the master-minds of **Matt Miguel**, **Michael Hendricks**, **Joey Hernandez**, **Dario Vitorte**, and **Ryan Lee**
