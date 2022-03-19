@@ -18,16 +18,14 @@ function SingleCard({this_post, deletePost}) {
       <Card style={{ width: '18rem' }}>
         <Card.Body>
           <Card.Title>{title}</Card.Title>
-          <Card.Text>
-            ------
-            {content}
-            
-          </Card.Text>
+            <Card.Text>
+              ------
+              {content}
+            </Card.Text>
         </Card.Body>
         <Card.Footer className="text-muted">Posted date: {lastModified}</Card.Footer>
-          <Button onClick={handleClick} variant="primary">Delete Note</Button>
+        <Button onClick={handleClick} variant="primary">Delete Note</Button>
       </Card>
-
     </div>
   )
 }
