@@ -1,83 +1,124 @@
-# How To Use **SockNut**
+# Final Project Javascript 401-D45
 
-## Step One
+![Stack-Zero](./public/assets/Screen%20Shot%202022-03-18%20at%2010.33.13%20AM.png)
 
-- begin by running:
-`git clone`
+## **Stack-Zero Team Agreement**
 
-- Also run this as well:
-`git clone`
+## The Stack-Zero Team
 
-## Step Two
+- **Joey Hernandez**
+- **Matt Miguel**
+- **Michael Hendricks**
+- **Ryan Lee**
+- **Dario Vitorte**
 
-- run: `cd sock-nut`
-- then: `npm install`
-- then: `npm i express cors dotenv mongoose jwt bcrypt base-64 supertest sqlite3 jsonwebtoken`
-- repeat **step two** for 'backend'
+## **Cooperation Plan**
 
-## How to Use
+### **Team Key Strengths**
 
-## To start server
+- **Joey** and **Michael** Program Management, React, JavaScript, teamwork, bootstrap-react.
+- **Joey** Front-end Design, creative, communication, leadership, team building, all-around BA.
+- **Ryan** Cool bird Dad, testing/bug hunting, Master of parrot gifs.
+- **Michael** Backend creation, Javascript development and problem solving.
+- **Dario** Apex, technical acumen, bug hunting, problem solving, Back-end developer extraordinaire.
+- **Matt** He is pretty cool, great collaborator, team player, good in all aspects of full-stack, prefers the Back-end.
 
-- run: `npm start`
-*To test the server*
+### How are we going to utilize these strengths?
 
-- run: `npm run test`
-*To run the tests*
+- We're going to learn how best utilize our strengths and weaknesses by forthright questions and answers before starting on aspects of our project.
 
-### Models
+### What professional competencies do you want work on?
 
-### Sock-Nut
+- **Joey** wants to work on leadership and project/time-management as well as confidence in technical skills.
+- **Ryan** endeavors to hone his technical skills.
+- **Michael** creativity and dealing with ambiguity.
+- **Matt** build confidence in technical skills and personally, also endeavors to hone his skills.
+- **Dario** communication skills, organization and time-management.
 
-- An application for the tracking of relevant development notes compiled in a social media sort of way.
+### Day to day work schedule
 
-#### Problem/Pain Point
+- **9:00am to 6:00pm** 12pm-2pm lunch designed but open to interpretation.
+- Morning standup to go over what is planned.
+- Afternoon (~5:00PM) will be bringing all the code together and planning for the next day.
 
-- Note compiling for relevant usage.
-- Making development fun.
-- bring all your friends!
+## **Conflict Plan**
 
-#### MVP
+### Conflict Resolution
 
-- Take notes and categorize.
-- Be able to share, post, delete, and add notes.
+1. One-on-one discussion.
+2. Mediation with another group member.
+3. Group discussion.
+4. Elevate to the next level as necessary.
+5. Each member will take ten paces, draw their chosen weapon, and fight to the death.
 
-#### Authorization
+## **Communication Plan**
 
-- For profile owners:
-  - Manage profile details
-  - Manage notes feed
+### Availability
 
-### User Stories - "As a note creator..."
+- **Joey** 12AM cutoff (but is an insomniac - available for friends at all times or emergencies)
+- **Michael** 9AM-6PM
+- **Ryan** 12AM but also available whenever
+- **Matt** soft cut-off at 6PM with an exigent hard cut-off of 11PM
+- **Dario** 9AM-6PM, available when necessary unless otherwise stated
 
-- I want to be able to add notes I find relevant or useful.
-- I want to be able to delete notes.
-- I want to be able to view my friend's notes.
-- I want to be able to edit my profile details.
+### Communication Platforms?
 
-### Stress Goals
+- **Slack**
+- **Remo**
+- **Text** *(for emergencies)*
 
-- Likes/UpVotes
-- Hints and suggested content
-- Study groups
+### Breaks and off hours
 
-**Being updated** https://miro.com/app/board/uXjVOP31-OE=/
-**File Structure** https://miro.com/app/board/uXjVOPdpmww=/
+- As needed but will have planned lunch
+- If we start to fall behind?
+- Reevaluate what is MVP for us
 
-### Database Schema
+### Communication on off hours
 
-### Features
+- **Slack**
+- **text** (for urgent needs)
+- Making sure to hear all voices
+- Everyone will be sharing at stand up and stand down.
+- Frame responses with **mutual respect**.
 
-### Deployed Server
+## **Stack-Zero Diversity Equity & Inclusion Plan**
 
-### Change Log
+- **Joey** is going to do his best to check his internal biases and assumptions of others.
+- **Michael** wants to ensure all voices are heard.
+- **Ryan** wants to work on examining his assumptions.
+- **Matt** I like what my team likes, SAME!
+- **Dario** same as above, for sure!
 
-### Error Handling
+## **Work Plan**
 
-- sends a 404 error if the route or method is unavailable.
+### Tools for collaboration and workflow
 
-### Testing
+- We will be creating a task list to manage things from our **Git-Hub Projects** board.
+- **LiveShare** on VS code to pair program
+- **Remo** for collaborative sessions
 
-### Credit and Co-Conspirators
+**Project Management Tool Link:**
+[GitHub Projects](https://github.com/orgs/Ethicus-Optimus/projects/2)
 
-- This amazing final project was thoughtfully created and masterfully crafted by the master-minds of **Matt Miguel**, **Michael Hendricks**, **Joey Hernandez**, **Dario Vitorte**, and **Ryan Lee**
+**Presentation Deck:**
+[Stack-Zero Presentation](https://docs.google.com/presentation/d/1Oyh7vEpNgR19IWRXvh8JQipcSrjbbL1kV6sucPHaOiM/edit?usp=sharing)
+
+### Git Process
+
+- Our project will live on the GitHub organization
+- Create two repos, a front and a back
+- All work will be completed on separate branches
+- Everyone conduct a pull at 9am
+- When component or feature is complete, push to dev branch for staging
+- Merging to main will require two reviewers
+- Otherwise any solo pushes cannot be merged without communication
+- All pushes to be completed by end of day unless otherwise communicated
+
+#### PR Processes
+
+- Team will conduct a pull at 9am
+- All work completed will be require a PR
+- PR's must be approved and reviewed by two team members
+- Merges can only occur once reviewed and approved
+- Pushes to dev only require one approval
+- All necessary merges and pushes should be completed by end of day.
